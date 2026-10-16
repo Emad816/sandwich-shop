@@ -17,20 +17,20 @@ public class PointOfSaleApp {
         }else {
             basePrice = 8.95;
         }
-
+        double discount = 0 ;
         double sandwichPrice = 0;
         int userAge = 0;
 
         System.out.printf("Enter your age ");
         userAge = scanner.nextInt();
         if(userAge <= 17){
-            basePrice= basePrice - (basePrice * 0.10);
+            discount = basePrice * 0.10 ;
         } else if (userAge >= 65) {
-            basePrice=basePrice - (basePrice * 0.20);
+            discount = basePrice * 0.20;
         }else {
-            basePrice = basePrice;
+            discount = 0;
         }
-        sandwichPrice = basePrice;
+        sandwichPrice = basePrice - discount;
         System.out.printf("Sandwich price %.2f ",sandwichPrice);
 
 
