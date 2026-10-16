@@ -13,7 +13,7 @@ public class PointOfSaleApp {
 
         String loaded = "";
         String sandwichSize;
-        System.out.printf("Enter sandwich size\n" +
+        System.out.printf("Enter sandwich size (Regular/Large)\n" +
                 "Regular: base price $5.45 \n" +
                 "Large: base price $8.95 \n");
         sandwichSize = scanner.next();
