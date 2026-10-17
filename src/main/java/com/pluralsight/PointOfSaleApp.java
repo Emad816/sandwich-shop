@@ -38,7 +38,6 @@ public class PointOfSaleApp {
             }else{
                 System.out.println("invalid answer");
             }
-
         }else{
             System.out.println("invalid answer");
         }
